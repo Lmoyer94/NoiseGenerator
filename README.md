@@ -4,7 +4,7 @@ Example1 usage:
 
 SimplexNoise noise(vec2(256, 256));
 noise.GenerateNoise(vec2(0, 0));
-SaveBMP("noise", noise.GetTexture(), 256, 256)
+SaveBMP("noise", noise.GetTexture(), 256, 256);
 
 
 
