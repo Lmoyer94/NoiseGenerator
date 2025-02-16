@@ -35,9 +35,10 @@ struct Pixel
 };
 
 
-void SaveBMP(std::vector<float> texture, int width, int height)
+void SaveBMP(std::string filename, std::vector<float> texture, int width, int height)
 {
-	std::ofstream outFile("noise.bmp", std::ofstream::binary);
+	std::string filepath = filename + ".bmp";
+	std::ofstream outFile(filepath, std::ofstream::binary);
 
 	BMPHeader bmpHeader;
 	BMPInfoHeader bmpInfoHeader;
